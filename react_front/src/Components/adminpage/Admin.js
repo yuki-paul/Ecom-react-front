@@ -4,6 +4,7 @@ import Content from './Content'
 import Header from './Header'
 import Paperbase from './Paperbase'
 import Addproduct from '../addproduct&addcoupon/Addproduct'
+import Addcoupon from '../addproduct&addcoupon/Addcoupon'
 
 function admin() {
   return (

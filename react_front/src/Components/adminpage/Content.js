@@ -11,6 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import Addproduct from '../addproduct&addcoupon/Addproduct';
+import Addcoupon from '../addproduct&addcoupon/Addcoupon';
 
 export default function Content() {
   return (
@@ -27,32 +28,39 @@ export default function Content() {
               <SearchIcon color="inherit" sx={{ display: 'block' }} />
             </Grid> */}
             <Grid item xs>
-              {/* <TextField
-                fullWidth
-                placeholder="Search by email address, phone number, or user UID"
-                InputProps={{
-                  disableUnderline: true,
-                  sx: { fontSize: 'default' },
-                }}
-                variant="standard"
-              /> */}
             </Grid>
             <Grid item>
               <Button href="/Addproduct" variant="contained" sx={{ mr: 1 }}>
                 Add Product
               </Button>
-              {/* <Tooltip title="Reload">
-                <IconButton>
-                  <RefreshIcon color="inherit" sx={{ display: 'block' }} />
-                </IconButton>
-              </Tooltip> */}
             </Grid>
           </Grid>
         </Toolbar>
       </AppBar>
       <Typography sx={{ my: 5, mx: 2 }} color="text.secondary" align="center">
-        No users for this project yet
-      </Typography> 
+        Add product here
+      </Typography>
+      <AppBar
+        position="static"
+        color="default"
+        elevation={0}
+        sx={{ borderBottom: '1px solid rgba(0, 0, 0, 0.12)' }}
+      >
+        <Toolbar>
+          <Grid container spacing={2} alignItems="center">
+            <Grid item xs>
+            </Grid>
+            <Grid item>
+              <Button href="/Addcoupon" variant="contained" sx={{ mr: 1 }}>
+                Add coupon
+              </Button>
+            </Grid>
+          </Grid>
+        </Toolbar>
+      </AppBar> 
+      <Typography sx={{ my: 5, mx: 2 }} color="text.secondary" align="center">
+        Add coupon here
+      </Typography>
     </Paper>
   );
 }

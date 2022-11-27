@@ -5,6 +5,7 @@ import Login from './Components/LoginAndSIgnup/login';
 import Register from './Components/LoginAndSIgnup/Register';
 import Admin from './Components/adminpage/Admin';
 import Addproduct from './Components/addproduct&addcoupon/Addproduct';
+import Addcoupon from './Components/addproduct&addcoupon/Addcoupon';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route  exact path={"/Register"} element={<Register/>}/>
             <Route exact path={"/Admin"} element={<Admin/>}/>
             <Route exact path={"/Addproduct"} element={<Addproduct/>}/>
+            <Route exact path={"/Addcoupon"} element={<Addcoupon/>}/>
           </Routes>
        </div>
     </div>
